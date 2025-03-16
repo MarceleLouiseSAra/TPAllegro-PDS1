@@ -10,7 +10,7 @@ INCLUDE_ALLEGRO = \include
 all: outro.o
 
 TPAllegro.o: TPAllegro.c
-	gcc -c TPAllegro.c -I$(PATH_ALLEGRO)$(INCLUDE_ALLEGRO) -c $@
+	gcc TPAllegro.c -I$(PATH_ALLEGRO)$(INCLUDE_ALLEGRO) -o $@
 
 clean:
 	rm TPAllegro.o
