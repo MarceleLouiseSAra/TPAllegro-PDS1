@@ -7,10 +7,10 @@ PATH_ALLEGRO = $(FOLDER)$(FOLDER_NAME)
 LIB_ALLEGRO = \lib\liballegro-$(ALLEGRO_VERSION)-monolith-mt.a
 INCLUDE_ALLEGRO = \include
 
-all: outro.o
-
 TPAllegro.o: TPAllegro.c
 	gcc TPAllegro.c -I$(PATH_ALLEGRO)$(INCLUDE_ALLEGRO) -o $@
+
+all: TPAllegro.o
 
 clean:
 	rm TPAllegro.o
